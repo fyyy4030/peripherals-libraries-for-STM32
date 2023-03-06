@@ -20,6 +20,7 @@
 #define reg_C1DATAL 0x16
 #define reg_C1DATAH 0x17
 
+extern I2C_HandleTypeDef hi2c1;
 uint8_t TSL2591_init();
 uint8_t TSL2591_read_byte(uint8_t reg_addr);
 uint8_t TSL2591_write_byte(uint8_t reg_addr,uint8_t reg_data);

@@ -11,7 +11,7 @@
 
 #define CH450_port hi2c1
 //#define CH450_addr 0x48
-
+extern I2C_HandleTypeDef hi2c1;
 uint8_t CH450_send_sig_number(uint8_t pos,uint8_t num);
 uint8_t CH450_send_float(float num);
 uint8_t CH450_ReadKey();

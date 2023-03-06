@@ -12,7 +12,7 @@
 #define OTP3001_port hi2c1
 #define OTP3001_addr 0x88
 
-
+extern I2C_HandleTypeDef hi2c1;
 uint32_t OTP3001_GetLux();
 uint8_t OTP3001_init();
 
