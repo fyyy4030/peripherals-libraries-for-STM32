@@ -5,6 +5,8 @@
 
 #define CH455_port hi2c2
 
+extern I2C_HandleTypeDef hi2c2;
+
 uint8_t CH455_send_sig_number(uint8_t pos,uint8_t num);
 uint8_t CH455_send_float(float num);
 uint8_t CH455_ReadKey();
